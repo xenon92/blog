@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     
-    <title>EFS Backup</title>
+    <title>Shutdown Manager</title>
     <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True" />
@@ -28,7 +28,7 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="../rss/index.html">
-<link rel="canonical" href="http://blog.shubhangrathore.com/efs-backup/" />
+<link rel="canonical" href="http://blog.shubhangrathore.com/shutdown-manager/" />
 
 </head>
 <body class="post-template">
@@ -96,72 +96,90 @@
     <article class="post">
         
         <header class="post-header">
-            <h1>EFS Backup</h1>
+            <h1>Shutdown Manager</h1>
             
             <!-- Post meta -->
             <menu class="post-meta">
-    <div class="post-meta-data"><i class="icon-datetime"></i> 6th July, 2014</div>
+    <div class="post-meta-data"><i class="icon-datetime"></i> 8th July, 2014</div>
     <!--<div class="post-meta-data"><i class="icon-shortlink"></i> <a href="#">BIT.LY/1ES1TCF</a></div>-->
     
 </menu>
         </header>
 
         <div class="post-content">
-            <p>An open source android app to backup and restore the EFS partition of any device.</p>
+            <p>.NET based software with a <strong>Timer</strong> to <strong>Shutdown, Hibernate, Sleep, Restart, Log off or Lock</strong> your Windows system.</p>
 
-<p>EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like <strong>Wi-Fi MAC address</strong>, <strong>Bluetooth MAC address</strong> and the MOST IMPORTANT - <strong>IMEI address</strong> (nv_data.bin).</p>
+<p>Generally there is a "time remaining" attribute for a long ongoing processes, or we have a rough estimate of time in which the process will be complete.It is almost always counter-productive to stick around the system to wait for a process to be completed, so you may shutdown/hibernate/sleep etc. the system (save some electricity bill!?).</p>
 
-<p>Now if this EFS partition accidentally gets corrupted or erased, the phone’s IMEI number will get erased and the device will become completely useless. It won't be able to make voice call further, as the carrier network will not recognize the phone. This can happen for a variety of reasons, including flashing a wrong or corrupted ROM. This kind of damage is not accepted by the service center. Only solution that the service center provides is to replace the motherboard of the device and that costs a lot of <strong>$$$</strong>!</p>
+<p>I needed something that would do this job for me on an estimate of time. So I developed this software.</p>
 
-<p>Only a <strong>backup</strong> of the EFS partition can save the phone if something goes wrong with the EFS partition.</p>
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Simple interface</li>
+<li>Can be minimized to System Tray.</li>
+<li>Shows the "Time remaining" for Shutdown/Hibernate etc. to keep a track.</li>
+<li>Software automatically removes itself from the memory (exits) as soon as the job is done.
+Very low on memory resources.</li>
+</ul>
+
+<h3 id="screenshots">Screenshots</h3>
+
+<p><img src="../content/images/2014/Jul/screenshot-1-sm-v2-3.PNG" alt="" /></p>
+
+<p><img src="../content/images/2014/Jul/screenshot-2-sm-v2-3.PNG" alt="" /></p>
 
 <h3 id="howtouse">How to Use?</h3>
 
-<p>To backup:</p>
-
 <ul>
-<li>Tap to open the app from the launcher</li>
-<li>Grant root permissions</li>
-<li>Check the device details that are shown within the app</li>
-<li>Tap to backup the EFS partition (requires root permission)</li>
-<li>'<strong>efs*.img</strong>' backup img file will be created in the root directory of internal storage</li>
+<li>Select the option according to your requirement (Shutdown, Hibernate, Sleep, Restart, Lock or Log off)</li>
+<li>Set the Timer</li>
+<li>Click "Accept"</li>
 </ul>
 
-<p>To restore:</p>
-
-<ul>
-<li>Tap to launch the app from the launcher</li>
-<li>Grant root permissions</li>
-<li>Tap Restore</li>
-<li>Browse for the efs backup img file (only '<strong>.img</strong>' file will be valid)</li>
-<li>Grant root permissions</li>
-<li>Done</li>
-</ul>
-
-<p>Necessary information and instructions are included in the app.</p>
+<p>System will automatically perform the job after the set time interval.</p>
 
 <h3 id="systemrequirements">System Requirements</h3>
 
 <ul>
-<li>Android 4.0+ (Ice cream sandwich+)</li>
-<li>Root permissions</li>
-<li>Samsung device</li>
+<li>.NET framework</li>
+<li>Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1</li>
 </ul>
 
 <h3 id="downloads">Downloads</h3>
 
-<p>Check the '<strong>Releases</strong>' section in Github source.</p>
+<p>The software can be downloaded from <a href="https://github.com/xenon92/my-software/blob/master/shutdown-manager/Shutdown-Manager-v2.3.zip?raw=true">HERE</a></p>
+
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="v23">v2.3</h4>
+
+<ul>
+<li>Under-the-hood code changes</li>
+<li>Updated UI</li>
+<li>Updated the code according to coding conventions</li>
+<li>Updated ToolTipTexts</li>
+<li>Updated font style</li>
+<li>Fixed Copyright format</li>
+<li>Other minor updates</li>
+</ul>
+
+<h4 id="v22">v2.2</h4>
+
+<ul>
+<li>Initial release on subversion system</li>
+</ul>
 
 <h3 id="copyright">Copyright</h3>
 
-<p>Copyright (C) 2014 Shubhang Rathore</p>
+<p>Copyright (C) 2011, 2014 by Shubhang Rathore</p>
         </div>
 
     </article>
 
     <!-- Google+ Comments 
     <section class="comments">
-    <div id="post_4_comments"></div><script>(function () {var c = document.getElementById('post_4_comments'),w = c.offsetWidth; c.innerHTML = '<div class="g-comments" data-href="http://blog.shubhangrathore.com/efs-backup/" data-width="' + w + '" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>';})();</script>
+    <div id="post_5_comments"></div><script>(function () {var c = document.getElementById('post_5_comments'),w = c.offsetWidth; c.innerHTML = '<div class="g-comments" data-href="http://blog.shubhangrathore.com/shutdown-manager/" data-width="' + w + '" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>';})();</script>
     </section>
     -->
 
@@ -173,7 +191,7 @@
 <script src="../public/jquery.js?v=af09278933"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:2368/efs-backup/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="http://localhost:2368/shutdown-manager/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="../assets/js/plugins/jquery.fitvids.js?v=af09278933"></script>
 <script src="../assets/js/script.js?v=af09278933"></script>
 
