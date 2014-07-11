@@ -1,3 +1,3 @@
 # Blog
 
-My personal blog
+My personal blog - http://blog.shubhangrathore.com
