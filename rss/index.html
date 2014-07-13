@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shubhang Rathore]]></title><description><![CDATA[Blog]]></description><link>http://blog.shubhangrathore.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Fri, 11 Jul 2014 12:45:52 GMT</lastBuildDate><atom:link href="http://blog.shubhangrathore.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Keep Trash]]></title><description><![CDATA[<p>An open source Xposed module for android to move the 'Delete' button from overflow menu to action bar in official <strong><a href='https://play.google.com/store/apps/details?id=com.google.android.keep' >Google Keep</a></strong> app.</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shubhang Rathore]]></title><description><![CDATA[Blog]]></description><link>http://blog.shubhangrathore.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Sun, 13 Jul 2014 09:37:55 GMT</lastBuildDate><atom:link href="http://blog.shubhangrathore.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Keep Trash]]></title><description><![CDATA[<p>An open source Xposed module for android to move the 'Delete' button from overflow menu to action bar in official <strong><a href='https://play.google.com/store/apps/details?id=com.google.android.keep' >Google Keep</a></strong> app.</p>
 
 <p>I use Google Keep <strong>a lot</strong> to jot down thoughts that come to my mind, thoughts that may come in handy in future. This leads to many many notes scattered all over the app.</p>
 
@@ -20,7 +20,19 @@
 <li>Tap on 'Delete'</li>
 </ol>
 
+<p>In v1.1, I implemented a customizable icon listing in the action bar of the official Google Keep app. The users can select which icons they want to show in their Google Keep app action bar. Users can choose any combination, such as select only one among the menu icons listed below, choose any two, choose all three or choose none. Users can choose among the following icons -</p>
+
+<ul>
+<li>Archive</li>
+<li>Delete</li>
+<li>Share</li>
+</ul>
+
 <h3 id="screenshots">Screenshots</h3>
+
+<h4 id="keeptrash">Keep Trash</h4>
+
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-12-35_HAenexus520140713_140345.png'  alt="" /></p>
 
 <h4 id="before">Before</h4>
 
@@ -60,11 +72,25 @@ Check the '<strong><a href='http://repo.xposed.info/module/com.shubhangrathore.x
 
 <h3 id="changelog">Changelog</h3>
 
+<h4 id="v11">v1.1</h4>
+
+<p><strong>NOTE</strong> - If you have previously disabled the GUI in v1.0, uninstall and reinstall Keep Trash to enable the <strong>new GUI</strong> to see the customization options.</p>
+
+<ul>
+<li>Ability to choose which icons you want to show up in official Google Keep's action bar (any combination from Archive, Delete and Share can be set. Any one among these, any two, all or none)</li>
+<li>Switch from Holo theme to Holo light with dark action bar</li>
+<li>Remove 'Disable GUI' checkbox</li>
+<li>Enable 'Open Google Keep in Play Store' permanently</li>
+<li>Code clean up</li>
+</ul>
+
 <h4 id="v10">v1.0</h4>
 
 <ul>
 <li>Initial release</li>
 </ul>
+
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-30-23_Bdmnexus520140713_140413.png'  alt="" /></p>
 
 <h3 id="license">License</h3>
 
