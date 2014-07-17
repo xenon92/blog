@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shubhang Rathore]]></title><description><![CDATA[Blog]]></description><link>http://blog.shubhangrathore.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Sun, 13 Jul 2014 12:36:07 GMT</lastBuildDate><atom:link href="http://blog.shubhangrathore.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Keep Trash]]></title><description><![CDATA[<p>An open source Xposed module for android to move the 'Delete' button from overflow menu to action bar in official <strong><a href='https://play.google.com/store/apps/details?id=com.google.android.keep' >Google Keep</a></strong> app.</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shubhang Rathore]]></title><description><![CDATA[Blog]]></description><link>http://blog.shubhangrathore.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Thu, 17 Jul 2014 14:03:37 GMT</lastBuildDate><atom:link href="http://blog.shubhangrathore.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Keep Trash]]></title><description><![CDATA[<p>An open source Xposed module for android, to move 'Delete', 'Archive', 'Show/Hide Checkboxes' or 'Share' menu options from 3-dot overflow menu to the action bar in official <strong><a href='https://play.google.com/store/apps/details?id=com.google.android.keep' >Google Keep</a></strong> app.</p>
 
 <p>I use Google Keep <strong>a lot</strong> to jot down thoughts that come to my mind, thoughts that may come in handy in future. This leads to many many notes scattered all over the app.</p>
 
@@ -11,16 +11,16 @@
 <li>Tap on 'Delete'.</li>
 </ol>
 
-<p>It was kind of frustrating for me to have an extra tap to open the 3-dot overflow menu just so that I could reach the 'Delete' button.</p>
+<p>It was kind of frustrating for me to have an extra tap to open the 3-dot overflow menu just so that I could reach the 'Delete' button. Such was the case with a few more menu options that were hidden inside the overflow menu and were an extra tap away.</p>
 
-<p>So I moved the button to the action bar. Now, to delete a note - </p>
+<p>So I moved the buttons to the action bar. Now, to delete a note - </p>
 
 <ol>
 <li>Long tap the note  </li>
 <li>Tap on 'Delete'</li>
 </ol>
 
-<p>In v1.1, I implemented a customizable icon listing in the action bar of the official Google Keep app. The users can select which icons they want to show in their Google Keep app action bar. Users can choose any combination, such as select only one among the menu icons listed below, choose any two, choose all three or choose none. Users can choose among the following icons -</p>
+<p>In v1.1, I implemented a customizable icon listing in the action bar when the note was selected in the official Google Keep app. Users can choose any combination, such as select only one among the menu icons listed below, choose any two, choose all three or choose none. Users can choose among the following icons -</p>
 
 <ul>
 <li>Archive</li>
@@ -28,19 +28,30 @@
 <li>Share</li>
 </ul>
 
+<p>In v1.2, I implemented a customizable icon listing in the action bar when the note was being edited in the official Google Keep app. Just like v1.1, users can selected any combination among the menu items listed below - </p>
+
+<ul>
+<li>Archive</li>
+<li>Show/Hide Checkboxes</li>
+</ul>
+
+<p>Users can select which icons they want to show in their Google Keep app action bar and customize the way they use Google Keep.</p>
+
 <h3 id="screenshots">Screenshots</h3>
 
 <h4 id="keeptrash">Keep Trash</h4>
 
-<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-12-35_HAenexus520140713_140345.png'  alt="" /></p>
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-17-18-38-18_jhtnexus520140717_183932.png?raw=true'  alt="" /></p>
+
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-12-35_HAenexus520140713_140345.png?raw=true'  alt="" /></p>
 
 <h4 id="before">Before</h4>
 
-<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-21-05.png'  alt="" /></p>
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-21-05.png?raw=true'  alt="" /></p>
 
 <h4 id="after">After</h4>
 
-<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-15-55.png'  alt="" /></p>
+<p><img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-15-55.png?raw=true'  alt="" /></p>
 
 <h3 id="howtouse">How to use?</h3>
 
@@ -58,7 +69,7 @@
 
 <ul>
 <li><strong><a href='http://repo.xposed.info/' >Xposed</a></strong> framework</li>
-<li>Android 4.0+</li>
+<li>Android 4.0.3+</li>
 </ul>
 
 <h3 id="downloads">Downloads</h3>
@@ -71,6 +82,17 @@ Check the '<strong><a href='http://repo.xposed.info/module/com.shubhangrathore.x
 <p>Source code of the app can be found at my <strong><a href='https://github.com/xenon92/xposed-keep-trash' >Github</a></strong> repository.</p>
 
 <h3 id="changelog">Changelog</h3>
+
+<h4 id="v12">v1.2</h4>
+
+<ul>
+<li>Ability to choose which icons (Archive or Show/Hide checkboxes) should show up in action bar when the note is being edited in the official Google Keep app (any combination can be selected)</li>
+<li>Add android L style floating button to open Google Keep from Keep Trash (thanx to <strong><a href='https://github.com/FaizMalkani/FloatingActionButton' >FAB</a></strong> library)</li>
+<li>Change supported android version to 4.0.3+ (API 15+) (Google Keep supports 4.0.3+ only)</li>
+<li>Fix module description in Xposed Installer after install</li>
+<li>Add padding to "Share" icon to make it a bit smaller</li>
+<li>Set action bar color to blue</li>
+</ul>
 
 <h4 id="v11">v1.1</h4>
 
