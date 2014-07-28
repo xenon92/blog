@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     
-    <title>EFS Backup</title>
+    <title>MultiSIM Toggle</title>
     <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True" />
@@ -28,7 +28,7 @@
     
     <meta name="generator" content="Ghost 0.4" />
 <link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="../rss/index.html">
-<link rel="canonical" href="http://blog.shubhangrathore.com/efs-backup/" />
+<link rel="canonical" href="http://blog.shubhangrathore.com/multisim-toggle/" />
 
 </head>
 <body class="post-template">
@@ -96,71 +96,102 @@
     <article class="post">
         
         <header class="post-header">
-            <h1>EFS Backup</h1>
+            <h1>MultiSIM Toggle</h1>
             
             <!-- Post meta -->
             <menu class="post-meta">
-    <div class="post-meta-data"><i class="icon-datetime"></i> 6th July, 2014</div>
+    <div class="post-meta-data"><i class="icon-datetime"></i> 28th July, 2014</div>
     <!--<div class="post-meta-data"><i class="icon-shortlink"></i> <a href="#">BIT.LY/1ES1TCF</a></div>-->
     
 </menu>
         </header>
 
         <div class="post-content">
-            <p>An open source android app to backup and restore the EFS partition of any device.</p>
+            <p>An open source app for android, to enable or disable multi-SIM functionality on multi-SIM supporting AOSP based ROMs.</p>
 
-<p>EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like <strong>Wi-Fi MAC address</strong>, <strong>Bluetooth MAC address</strong> and the MOST IMPORTANT - <strong>IMEI address</strong> (nv_data.bin).</p>
+<p>The app toggles from one state to another without the need to remember shell commands.</p>
 
-<p>Now if this EFS partition accidentally gets corrupted or erased, the phone’s IMEI number will get erased and the device will become completely useless. It won't be able to make voice call further, as the carrier network will not recognize the phone. This can happen for a variety of reasons, including flashing a wrong or corrupted ROM. This kind of damage is not accepted by the service center. Only solution that the service center provides is to replace the motherboard of the device and that costs a lot of <strong>$$$</strong>!</p>
+<p>During my debugging work, I found myself switching from single SIM mode to multi-SIM and vice versa quite frequently. To do so, I had to type the following shell commands:</p>
 
-<p>Only a <strong>backup</strong> of the EFS partition can save the phone if something goes wrong with the EFS partition.</p>
+<ul>
+<li><p>Allow <strong>SuperUser</strong> execution at shell</p>
+
+<blockquote>
+  <p>su</p>
+</blockquote></li>
+<li><p>To <strong>enable</strong> multi-SIM</p>
+
+<blockquote>
+  <p>setprop persist.radio.multisim.config dsds</p>
+</blockquote></li>
+<li><p>To <strong>disable</strong> multi-SIM</p>
+
+<blockquote>
+  <p>setprop persist.radio.multisim.config none</p>
+</blockquote></li>
+</ul>
+
+<p>So I made an app for that. It executes these commands at shell level without the need to open terminal manually and type in these commands.</p>
+
+<p><strong>NOTE:</strong> Use this app only if you are sure that your <strong>ROM supports multi-SIM</strong>. Even if your device is multi-SIM capable, but your ROM isn't, using this app might lead to unforeseeable results. Contact your device maintainer to add multi-SIM support.</p>
+
+<h3 id="features">Features</h3>
+
+<ul>
+<li>Minimal and clean interface</li>
+<li>Translucent decors for android 4.4+ (kitkat)</li>
+<li>Android L style floating buttons (thanx to <strong><a href="https://github.com/FaizMalkani/FloatingActionButton">FAB</a></strong> library)</li>
+</ul>
 
 <h3 id="screenshots">Screenshots</h3>
 
-<h3 id="howtouse">How to Use?</h3>
+<p><img src="../content/images/2014/Jul/Screenshot_2014-07-28-13-42-48_kBynexus520140728_154154.png" alt="" /></p>
 
-<p>To backup:</p>
+<p><img src="../content/images/2014/Jul/Screenshot_2014-07-28-13-42-57_xbGnexus520140728_154132.png" alt="" /></p>
+
+<p><img src="../content/images/2014/Jul/Screenshot_2014-07-28-13-37-46_tpfnexus520140728_154209.png" alt="" /></p>
+
+<h3 id="howtouse">How to use?</h3>
 
 <ul>
-<li>Tap to open the app from the launcher</li>
-<li>Grant root permissions</li>
-<li>Check the device details that are shown within the app</li>
-<li>Tap to backup the EFS partition (requires root permission)</li>
-<li>'<strong>efs*.img</strong>' backup img file will be created in the root directory of internal storage</li>
+<li>Take a nandroid backup</li>
+<li>Install <strong><a href="https://github.com/xenon92/multisim-toggle/releases">MultiSIM Toggle</a></strong></li>
+<li>Tap the floating SIM button</li>
+<li>Grant SuperUser permission</li>
+<li>Automatic reboot of the device if toggle is successful</li>
 </ul>
 
-<p>To restore:</p>
+<h3 id="support">Support</h3>
+
+<p>Bugs reports, suggestions and support can be found on XDA-developers <strong><a href="index.html">thread</a></strong> for MultiSIM Toggle.</p>
+
+<h3 id="requirements">Requirements</h3>
 
 <ul>
-<li>Tap to launch the app from the launcher</li>
-<li>Grant root permissions</li>
-<li>Tap Restore</li>
-<li>Browse for the efs backup img file (only '<strong>.img</strong>' file will be valid)</li>
-<li>Grant root permissions</li>
-<li>Done</li>
-</ul>
-
-<p>Necessary information and instructions are included in the app.</p>
-
-<h3 id="systemrequirements">System Requirements</h3>
-
-<ul>
-<li>Android 4.0+ (Ice cream sandwich+)</li>
-<li>Root permissions</li>
-<li>Samsung device</li>
+<li>Root</li>
+<li>Android 4.0.3+</li>
+<li>MultiSIM supporting AOSP based ROM</li>
 </ul>
 
 <h3 id="downloads">Downloads</h3>
 
-<p>Check the '<strong><a href="https://github.com/xenon92/efs-backup/releases">Releases</a></strong>' section in Github source.</p>
+<p>Check the '<strong><a href="https://github.com/xenon92/multisim-toggle/releases">Releases</a></strong>' section in my Github source.</p>
 
-<h3 id="source">Source</h3>
+<h3 id="sourcecode">Source code</h3>
 
-<p>Source code of the software can be found at my <strong><a href="https://github.com/xenon92/efs-backup">Github</a></strong> repository.</p>
+<p>Source code of the app can be found at my <strong><a href="https://github.com/xenon92/multisim-toggle">Github</a></strong> repository.</p>
+
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="v11">v1.1</h4>
+
+<ul>
+<li>Initial Release</li>
+</ul>
 
 <h3 id="license">License</h3>
 
-<p>The source code is licensed under GNU General Public License v3 (<a href="https://github.com/xenon92/efs-backup/blob/master/LICENSE">GPL v3</a>)</p>
+<p>The source code is licensed under GNU General Public License v3 (<strong><a href="https://github.com/xenon92/multisim-toggle/blob/master/LICENSE">GPL v3</a></strong>)</p>
 
 <h3 id="copyright">Copyright</h3>
 
@@ -171,7 +202,7 @@
 
     <!-- Google+ Comments -->
     <section class="comments">
-	<div id="post_4_comments"></div><script>(function () {var c = document.getElementById('post_4_comments'),w = c.offsetWidth; c.innerHTML = '<div class="g-comments" data-href="http://blog.shubhangrathore.com/efs-backup/" data-width="' + w + '" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>';})();</script>
+	<div id="post_11_comments"></div><script>(function () {var c = document.getElementById('post_11_comments'),w = c.offsetWidth; c.innerHTML = '<div class="g-comments" data-href="http://blog.shubhangrathore.com/multisim-toggle/" data-width="' + w + '" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>';})();</script>
     </section>
     
 
@@ -183,7 +214,7 @@
 <script src="../public/jquery.js?v=d247567997"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://localhost:2368/efs-backup/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="http://localhost:2368/multisim-toggle/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="../assets/js/plugins/jquery.fitvids.js?v=d247567997"></script>
 <script src="../assets/js/script.js?v=d247567997"></script>
 
