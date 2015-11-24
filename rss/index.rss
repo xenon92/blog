@@ -1,0 +1,627 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Shubhang Rathore</title><description>Blog</description><link>http://blog.shubhangrathore.com/</link><generator>Ghost 0.5</generator><lastBuildDate>Tue, 19 Aug 2014 12:02:22 GMT</lastBuildDate><atom:link href="http://blog.shubhangrathore.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>xHover</title><description>&lt;p&gt;An open source Xposed module for android, to customize Paranoid Android's Hover notification experience. xHover works with any android firmware that has Hover notifications enabled.&lt;/p&gt;
+
+&lt;p&gt;Hover notifications are elegant visual overlays of notifications at status bar, implemented by &lt;a href='https://plus.google.com/+ParanoidAndroidCorner/posts' &gt;Paranoid Android's&lt;/a&gt; development team. One of the most innovative features in Android Kitkat (4.4+) firmware, Hover notification &lt;strong&gt;reimagines&lt;/strong&gt; the way we interact with notifications on our devices.&lt;/p&gt;
+
+&lt;p&gt;Check out this video to get a better understanding of Hover notifications.&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src='http://www.youtube.com/embed/u_3Ik7m3z50'  frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Aug/screenshot-v1-2-1.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Aug/screenshot-v1-2-2.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="features"&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Normal timeout&lt;/strong&gt;: Customize the time duration for Hover notification to stay on screen if there is no interaction with the device.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notification waiting&lt;/strong&gt;: Customize the time duration for Hover notification to stay on screen if there is another notification waiting to be shown.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evade notification&lt;/strong&gt;: Customize the time duration for Hover notification to stay on screen after a touch outside the notification view.&lt;/li&gt;
+&lt;li&gt;Ability to customize &lt;strong&gt;Hover notification behavior on lock screen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Ability to &lt;strong&gt;hide non-clearable&lt;/strong&gt; notifications from Hover&lt;/li&gt;
+&lt;li&gt;Ability to &lt;strong&gt;hide low-priority&lt;/strong&gt; notifications from Hover&lt;/li&gt;
+&lt;li&gt;Translucent decors&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="howtouse"&gt;How to use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework for android by the developer &lt;strong&gt;&lt;a href='https://github.com/rovo89' &gt;rovo89&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.xhover' &gt;xHover&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enable xHover in Xposed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="support"&gt;Support&lt;/h3&gt;
+
+&lt;p&gt;Bugs reports, suggestions and support can be found on XDA-developers &lt;strong&gt;&lt;a href='http://forum.xda-developers.com/xposed/modules/mod-xhover-t2849921' &gt;thread&lt;/a&gt;&lt;/strong&gt; for xHover.&lt;/p&gt;
+
+&lt;h3 id="requirements"&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework&lt;/li&gt;
+&lt;li&gt;Firmware that has Hover notifications feature&lt;/li&gt;
+&lt;li&gt;Android 4.4+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-xhover/releases' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source. &lt;br /&gt;
+Check the '&lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.xhover' &gt;Xposed module repository&lt;/a&gt;&lt;/strong&gt;'&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the app can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-xhover' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v12"&gt;v1.2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Allow customization of Hover notifications on lock screen (secure and insecure)&lt;/li&gt;
+&lt;li&gt;Add option to hide non-clearable notifications from Hover&lt;/li&gt;
+&lt;li&gt;Add option to hide low-priority notifications from Hover&lt;/li&gt;
+&lt;li&gt;Add Indonesian translation (thanx to dustinraditya @ XDA-developers)&lt;/li&gt;
+&lt;li&gt;Add Italian translation (thanx to setmov @ XDA-developers)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v11"&gt;v1.1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add "Apply" option eliminating the need to reboot the device to apply customizations into Hover&lt;/li&gt;
+&lt;li&gt;Add "Test notification" option&lt;/li&gt;
+&lt;li&gt;Add icons to the Actions available in xHover&lt;/li&gt;
+&lt;li&gt;Improved GUI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v10"&gt;v1.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-xhover/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/xhover/</link><guid isPermaLink="false">155bcecb-ab08-4565-9fe2-5bfc629183b0</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Sat, 16 Aug 2014 16:46:32 GMT</pubDate></item><item><title>Disable Fullscreen Keyboard</title><description>&lt;p&gt;An open source Xposed module for android, to disable fullscreen keyboard along with the text input field that takes up the whole screen in landscape orientation.&lt;/p&gt;
+
+&lt;p&gt;It works with all android keyboards, including SwiftKey, Swype, Google keyboard, AOSP keyboard etc. &lt;/p&gt;
+
+&lt;p&gt;The module doesn't have a GUI. Just enable it in Xposed Installer, and it will do its magic.&lt;/p&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;h4 id="swiftkey"&gt;SwiftKey&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Swiftkey.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h4 id="swype"&gt;Swype&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Swype.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h4 id="aospkeyboard"&gt;AOSP Keyboard&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/AOSP.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="howtouse"&gt;How to use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework for android by the developer &lt;strong&gt;&lt;a href='https://github.com/rovo89' &gt;rovo89&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.disablefullscreenkeyboard' &gt;Disable Fullscreen Keyboard&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;Disable Fullscreen Keyboard&lt;/strong&gt; in Xposed Installer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="support"&gt;Support&lt;/h3&gt;
+
+&lt;p&gt;Bugs reports, suggestions and support can be found on XDA-developers &lt;strong&gt;&lt;a href='http://forum.xda-developers.com/xposed/modules/mod-disable-fullscreen-keyboard-t2832902' &gt;thread&lt;/a&gt;&lt;/strong&gt; for &lt;strong&gt;Disable Fullscreen Keyboard&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id="requirements"&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework&lt;/li&gt;
+&lt;li&gt;Android 4.0+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-disable-fullscreen-keyboard/releases' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source. &lt;br /&gt;
+Check the '&lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.disablefullscreenkeyboard' &gt;Xposed module repository&lt;/a&gt;&lt;/strong&gt;'&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the app can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-disable-fullscreen-keyboard' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v10"&gt;v1.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-disable-fullscreen-keyboard/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/disable-fullscreen-keyboard/</link><guid isPermaLink="false">605bf90f-42f5-45f4-8ad1-7b1453f0b38e</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Wed, 30 Jul 2014 12:40:01 GMT</pubDate></item><item><title>MultiSIM Toggle</title><description>&lt;p&gt;An open source app for android, to enable or disable multi-SIM functionality on multi-SIM supporting AOSP based ROMs. The app toggles the ROM from multi-SIM to single SIM functionality and vice versa.&lt;/p&gt;
+
+&lt;p&gt;During my debugging work, I found myself switching from single SIM mode to multi-SIM and vice versa quite frequently. To do so, I had to type the following shell commands:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Allow &lt;strong&gt;SuperUser&lt;/strong&gt; execution at shell &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;su&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To &lt;strong&gt;enable&lt;/strong&gt; multi-SIM&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setprop persist.radio.multisim.config dsds&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;To &lt;strong&gt;disable&lt;/strong&gt; multi-SIM&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setprop persist.radio.multisim.config none&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So I made an app for that. It executes these commands at shell level without the need to open terminal manually and type in these commands.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; Use this app only if you are sure that your &lt;strong&gt;ROM supports multi-SIM&lt;/strong&gt;. Even if your device is multi-SIM capable, but your ROM isn't, using this app might lead to unforeseeable results. Contact your device maintainer to add multi-SIM support.&lt;/p&gt;
+
+&lt;h3 id="features"&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Minimal and clean interface&lt;/li&gt;
+&lt;li&gt;Translucent decors for android 4.4+ (kitkat)&lt;/li&gt;
+&lt;li&gt;Android L style floating buttons (thanx to &lt;strong&gt;&lt;a href='https://github.com/FaizMalkani/FloatingActionButton' &gt;FAB&lt;/a&gt;&lt;/strong&gt; library)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-28-16-34-11_pwonexus520140728_163656.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-28-16-34-18_ngtnexus520140728_163636.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-28-16-31-31_kdpnexus520140728_163722.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="howtouse"&gt;How to use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Take a nandroid backup&lt;/li&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='https://github.com/xenon92/multisim-toggle/releases' &gt;MultiSIM Toggle&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Tap the floating SIM button&lt;/li&gt;
+&lt;li&gt;Grant SuperUser permission&lt;/li&gt;
+&lt;li&gt;Automatic reboot of the device if toggle is successful&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="support"&gt;Support&lt;/h3&gt;
+
+&lt;p&gt;Bugs reports, suggestions and support can be found on XDA-developers &lt;strong&gt;&lt;a href='http://forum.xda-developers.com/android/apps-games/app-multisim-toggle-t2830647' &gt;thread&lt;/a&gt;&lt;/strong&gt; for MultiSIM Toggle.&lt;/p&gt;
+
+&lt;h3 id="requirements"&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Root&lt;/li&gt;
+&lt;li&gt;Android 4.0.3+&lt;/li&gt;
+&lt;li&gt;MultiSIM supporting AOSP based ROM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='https://github.com/xenon92/multisim-toggle/releases' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source.&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the app can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/multisim-toggle' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v12"&gt;v1.2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added animation to multi-SIM toggle floating button&lt;/li&gt;
+&lt;li&gt;Open developer's website (&lt;a href='http://shubhangrathore.com/' &gt;http://shubhangrathore.com&lt;/a&gt;) on tapping footer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v11"&gt;v1.1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial Release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;strong&gt;&lt;a href='https://github.com/xenon92/multisim-toggle/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/multisim-toggle/</link><guid isPermaLink="false">0eaa95ae-747d-4576-b354-88d2c8a123fd</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Mon, 28 Jul 2014 10:14:50 GMT</pubDate></item><item><title>Keep Trash</title><description>&lt;p&gt;An open source Xposed module for android, to move 'Delete', 'Archive', 'Show/Hide Checkboxes' or 'Share' menu options from 3-dot overflow menu to the action bar in official &lt;strong&gt;&lt;a href='https://play.google.com/store/apps/details?id=com.google.android.keep' &gt;Google Keep&lt;/a&gt;&lt;/strong&gt; app.&lt;/p&gt;
+
+&lt;p&gt;I use Google Keep &lt;strong&gt;a lot&lt;/strong&gt; to jot down thoughts that come to my mind, thoughts that may come in handy in future. This leads to many many notes scattered all over the app.&lt;/p&gt;
+
+&lt;p&gt;To delete a note, I had to - &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Long tap the note  &lt;/li&gt;
+&lt;li&gt;Tap on the 3-dot overflow menu  &lt;/li&gt;
+&lt;li&gt;Tap on 'Delete'.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;It was kind of frustrating for me to have an extra tap to open the 3-dot overflow menu just so that I could reach the 'Delete' button. Such was the case with a few more menu options that were hidden inside the overflow menu and were an extra tap away.&lt;/p&gt;
+
+&lt;p&gt;So I moved the buttons to the action bar. Now, to delete a note - &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Long tap the note  &lt;/li&gt;
+&lt;li&gt;Tap on 'Delete'&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In v1.1, I implemented a customizable icon listing in the action bar when the note was selected in the official Google Keep app. Users can choose any combination, such as select only one among the menu icons listed below, choose any two, choose all three or choose none. Users can choose among the following icons -&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Archive&lt;/li&gt;
+&lt;li&gt;Delete&lt;/li&gt;
+&lt;li&gt;Share&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In v1.2, I implemented a customizable icon listing in the action bar when the note was being edited in the official Google Keep app. Just like v1.1, users can select any combination among the menu items listed below - &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Archive&lt;/li&gt;
+&lt;li&gt;Show/Hide Checkboxes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Users can select which icons they want to show in their Google Keep app action bar and customize the way they use Google Keep.&lt;/p&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;h4 id="keeptrash"&gt;Keep Trash&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-17-18-38-18_jhtnexus520140717_183932.png?raw=true'  alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-12-35_HAenexus520140713_140345.png?raw=true'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h4 id="before"&gt;Before&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-21-05.png?raw=true'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h4 id="after"&gt;After&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-10-21-15-55.png?raw=true'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="howtouse"&gt;How to use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework for android by the developer &lt;strong&gt;&lt;a href='https://github.com/rovo89' &gt;rovo89&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Install &lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.keeptrash' &gt;Keep Trash&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Enable Keep Trash in Xposed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="support"&gt;Support&lt;/h3&gt;
+
+&lt;p&gt;Bugs reports, suggestions and support can be found on XDA-developers &lt;strong&gt;&lt;a href='http://forum.xda-developers.com/xposed/modules/mod-trash-t2812589' &gt;thread&lt;/a&gt;&lt;/strong&gt; for Keep Trash.&lt;/p&gt;
+
+&lt;h3 id="requirements"&gt;Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href='http://repo.xposed.info/' &gt;Xposed&lt;/a&gt;&lt;/strong&gt; framework&lt;/li&gt;
+&lt;li&gt;Android 4.0.3+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-keep-trash/releases' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source. &lt;br /&gt;
+Check the '&lt;strong&gt;&lt;a href='http://repo.xposed.info/module/com.shubhangrathore.xposed.keeptrash' &gt;Xposed module repository&lt;/a&gt;&lt;/strong&gt;'&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the app can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-keep-trash' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v13"&gt;v1.3&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix action bar icons' sizes in official Google Keep&lt;/li&gt;
+&lt;li&gt;Remove "Exit" button from Keep Trash action bar&lt;/li&gt;
+&lt;li&gt;Added German translations (thanx to mihahn @ XDA-developers)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v12"&gt;v1.2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ability to choose which icons (Archive or Show/Hide checkboxes) should show up in action bar when the note is being edited in the official Google Keep app (any combination can be selected)&lt;/li&gt;
+&lt;li&gt;Add android L style floating button to open Google Keep from Keep Trash (thanx to &lt;strong&gt;&lt;a href='https://github.com/FaizMalkani/FloatingActionButton' &gt;FAB&lt;/a&gt;&lt;/strong&gt; library)&lt;/li&gt;
+&lt;li&gt;Change supported android version to 4.0.3+ (API 15+) (Google Keep supports 4.0.3+ only)&lt;/li&gt;
+&lt;li&gt;Fix module description in Xposed Installer after install&lt;/li&gt;
+&lt;li&gt;Add padding to "Share" icon to make it a bit smaller&lt;/li&gt;
+&lt;li&gt;Set action bar color to blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v11"&gt;v1.1&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; - If you have previously disabled the GUI in v1.0, uninstall and reinstall Keep Trash to enable the &lt;strong&gt;new GUI&lt;/strong&gt; to see the customization options.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ability to choose which icons you want to show up in official Google Keep's action bar (any combination from Archive, Delete and Share can be set. Any one among these, any two, all or none)&lt;/li&gt;
+&lt;li&gt;Switch from Holo theme to Holo light with dark action bar&lt;/li&gt;
+&lt;li&gt;Remove 'Disable GUI' checkbox&lt;/li&gt;
+&lt;li&gt;Enable 'Open Google Keep in Play Store' permanently&lt;/li&gt;
+&lt;li&gt;Code clean up&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v10"&gt;v1.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/Screenshot_2014-07-13-13-30-23_Bdmnexus520140713_140413.png'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;strong&gt;&lt;a href='https://github.com/xenon92/xposed-keep-trash/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/keep-trash/</link><guid isPermaLink="false">9c005647-c112-4920-89f6-125edb8cfe19</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Fri, 11 Jul 2014 08:15:02 GMT</pubDate></item><item><title>Shutdown Manager</title><description>&lt;p&gt;.NET based software with a &lt;strong&gt;Timer&lt;/strong&gt; to &lt;strong&gt;Shutdown, Hibernate, Sleep, Restart, Log off or Lock&lt;/strong&gt; your Windows system.&lt;/p&gt;
+
+&lt;p&gt;Generally there is a "time remaining" attribute for a long ongoing processes, or we have a rough estimate of time in which the process will be complete.It is almost always counter-productive to stick around the system to wait for a process to be completed, so you may shutdown/hibernate/sleep etc. the system (save some electricity bill!?).&lt;/p&gt;
+
+&lt;p&gt;I needed something that would do this job for me on an estimate of time. So I developed this software.&lt;/p&gt;
+
+&lt;h3 id="features"&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simple interface&lt;/li&gt;
+&lt;li&gt;Can be minimized to System Tray.&lt;/li&gt;
+&lt;li&gt;Shows the "Time remaining" for Shutdown/Hibernate etc. to keep a track.&lt;/li&gt;
+&lt;li&gt;Software automatically removes itself from the memory (exits) as soon as the job is done.
+Very low on memory resources.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/screenshot-1-sm-v2-3.PNG'  alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/screenshot-2-sm-v2-3.PNG'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="howtouse"&gt;How to Use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Select the option according to your requirement (Shutdown, Hibernate, Sleep, Restart, Lock or Log off)&lt;/li&gt;
+&lt;li&gt;Set the Timer&lt;/li&gt;
+&lt;li&gt;Click "Accept"&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;System will automatically perform the job after the set time interval.&lt;/p&gt;
+
+&lt;h3 id="systemrequirements"&gt;System Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;.NET framework&lt;/li&gt;
+&lt;li&gt;Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;The software can be downloaded from &lt;strong&gt;&lt;a href='https://github.com/xenon92/my-software/blob/master/shutdown-manager/Shutdown-Manager-v2.3.zip?raw=true' &gt;HERE&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v23"&gt;v2.3&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Under-the-hood code changes&lt;/li&gt;
+&lt;li&gt;Updated UI&lt;/li&gt;
+&lt;li&gt;Updated the code according to coding conventions&lt;/li&gt;
+&lt;li&gt;Updated ToolTipTexts&lt;/li&gt;
+&lt;li&gt;Updated font style&lt;/li&gt;
+&lt;li&gt;Fixed Copyright format&lt;/li&gt;
+&lt;li&gt;Other minor updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v22"&gt;v2.2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release on subversion system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2011, 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/shutdown-manager/</link><guid isPermaLink="false">2cbc81ad-d246-44d3-a6ef-99d2508c3bfe</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Mon, 07 Jul 2014 21:32:13 GMT</pubDate></item><item><title>Crasher</title><description>&lt;p&gt;Open source .NET based GUI for a CLI hacking code that exploits a vulnerability in old gaming servers, causing them to crash.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This GUI requires the CLI code for it to work. Without that code, this GUI is useless&lt;/li&gt;
+&lt;li&gt;DISCLAIMER is added with the GUI. READ IT!&lt;/li&gt;
+&lt;li&gt;I neither the endorse the hacking code, nor will I include it along with the source code of the GUI&lt;/li&gt;
+&lt;li&gt;This GUI was made solely for educational purposes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="screenshot"&gt;Screenshot&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/screenshot.PNG'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="features"&gt;Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server name is IP independent&lt;/li&gt;
+&lt;li&gt;Ability to save and delete the servers with their name, IP and port&lt;/li&gt;
+&lt;li&gt;System balloon notifications&lt;/li&gt;
+&lt;li&gt;Very low on system memory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="systemrequirements"&gt;System Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;.NET Framework&lt;/li&gt;
+&lt;li&gt;Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='http://goo.gl/oPAxhc' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source.&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the software can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/crasher' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v11"&gt;v1.1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Update the code according to coding conventions&lt;/li&gt;
+&lt;li&gt;Added inline comments to the code for better understanding and readability of the code&lt;/li&gt;
+&lt;li&gt;Code cleanup&lt;/li&gt;
+&lt;li&gt;Fix copyright year format&lt;/li&gt;
+&lt;li&gt;Other minor updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v10"&gt;v1.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code of the GUI is licensed under GNU General Public License v3 (&lt;a href='https://github.com/xenon92/crasher/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2012, 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/crasher/</link><guid isPermaLink="false">f64c83b0-5842-473b-86c4-4ef903419b71</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Mon, 07 Jul 2014 15:11:46 GMT</pubDate></item><item><title>Expunger</title><description>&lt;p&gt;Open source .NET based software to bulk delete files based on their extension.&lt;/p&gt;
+
+&lt;p&gt;Delete multiple files permanently from a folder, all at once, based on their extension.&lt;/p&gt;
+
+&lt;h3 id="screenshot"&gt;Screenshot&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src='http://blog.shubhangrathore.com/content/images/2014/Jul/screenshot-1.PNG'  alt="" /&gt;&lt;/p&gt;
+
+&lt;h3 id="howtouse"&gt;How to Use?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Copy "Expunger.exe" to the required folder.&lt;/li&gt;
+&lt;li&gt;Type any extension (or choose from the list of available extensions).&lt;/li&gt;
+&lt;li&gt;Click "Delete"&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All files from the folder with the given extension will be deleted permanently.&lt;/p&gt;
+
+&lt;h3 id="systemrequirements"&gt;System Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;.NET framework&lt;/li&gt;
+&lt;li&gt;Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='http://goo.gl/AdAjxR' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in my Github source.&lt;/p&gt;
+
+&lt;h3 id="sourcecode"&gt;Source code&lt;/h3&gt;
+
+&lt;p&gt;Source code of the software can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/expunger' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="changelog"&gt;Changelog&lt;/h3&gt;
+
+&lt;h4 id="v31"&gt;v3.1&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Updated the code according to coding conventions&lt;/li&gt;
+&lt;li&gt;Removed ToolTipTexts&lt;/li&gt;
+&lt;li&gt;Updated Font style&lt;/li&gt;
+&lt;li&gt;Code cleanup&lt;/li&gt;
+&lt;li&gt;Source cleanup - removed useless image resources&lt;/li&gt;
+&lt;li&gt;Fix copyright format&lt;/li&gt;
+&lt;li&gt;Other minor updates&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v30"&gt;v3.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change name of the project from "File Deleter" to "Expunger"&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v20"&gt;v2.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Changed the functionality of the software. No need to provide a path to the folder. Put "Expunger.exe" inside the required folder and run the software. Increases usability and requires less time to set up.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id="v10"&gt;v1.0&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Initial release of the software named "File Deleter"&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;a href='https://github.com/xenon92/expunger/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2012, 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/expunger/</link><guid isPermaLink="false">84e54a54-f720-4844-ab6a-0ebe5657f0aa</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Mon, 07 Jul 2014 15:09:42 GMT</pubDate></item><item><title>EFS Backup</title><description>&lt;p&gt;An open source android app to backup and restore the EFS partition of any device.&lt;/p&gt;
+
+&lt;p&gt;EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like &lt;strong&gt;Wi-Fi MAC address&lt;/strong&gt;, &lt;strong&gt;Bluetooth MAC address&lt;/strong&gt; and the MOST IMPORTANT - &lt;strong&gt;IMEI address&lt;/strong&gt; (nv_data.bin).&lt;/p&gt;
+
+&lt;p&gt;Now if this EFS partition accidentally gets corrupted or erased, the phone’s IMEI number will get erased and the device will become completely useless. It won't be able to make voice call further, as the carrier network will not recognize the phone. This can happen for a variety of reasons, including flashing a wrong or corrupted ROM. This kind of damage is not accepted by the service center. Only solution that the service center provides is to replace the motherboard of the device and that costs a lot of &lt;strong&gt;$$$&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;Only a &lt;strong&gt;backup&lt;/strong&gt; of the EFS partition can save the phone if something goes wrong with the EFS partition.&lt;/p&gt;
+
+&lt;h3 id="screenshots"&gt;Screenshots&lt;/h3&gt;
+
+&lt;h3 id="howtouse"&gt;How to Use?&lt;/h3&gt;
+
+&lt;p&gt;To backup:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tap to open the app from the launcher&lt;/li&gt;
+&lt;li&gt;Grant root permissions&lt;/li&gt;
+&lt;li&gt;Check the device details that are shown within the app&lt;/li&gt;
+&lt;li&gt;Tap to backup the EFS partition (requires root permission)&lt;/li&gt;
+&lt;li&gt;'&lt;strong&gt;efs*.img&lt;/strong&gt;' backup img file will be created in the root directory of internal storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To restore:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tap to launch the app from the launcher&lt;/li&gt;
+&lt;li&gt;Grant root permissions&lt;/li&gt;
+&lt;li&gt;Tap Restore&lt;/li&gt;
+&lt;li&gt;Browse for the efs backup img file (only '&lt;strong&gt;.img&lt;/strong&gt;' file will be valid)&lt;/li&gt;
+&lt;li&gt;Grant root permissions&lt;/li&gt;
+&lt;li&gt;Done&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Necessary information and instructions are included in the app.&lt;/p&gt;
+
+&lt;h3 id="systemrequirements"&gt;System Requirements&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Android 4.0+ (Ice cream sandwich+)&lt;/li&gt;
+&lt;li&gt;Root permissions&lt;/li&gt;
+&lt;li&gt;Samsung device&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="downloads"&gt;Downloads&lt;/h3&gt;
+
+&lt;p&gt;Check the '&lt;strong&gt;&lt;a href='https://github.com/xenon92/efs-backup/releases' &gt;Releases&lt;/a&gt;&lt;/strong&gt;' section in Github source.&lt;/p&gt;
+
+&lt;h3 id="source"&gt;Source&lt;/h3&gt;
+
+&lt;p&gt;Source code of the software can be found at my &lt;strong&gt;&lt;a href='https://github.com/xenon92/efs-backup' &gt;Github&lt;/a&gt;&lt;/strong&gt; repository.&lt;/p&gt;
+
+&lt;h3 id="license"&gt;License&lt;/h3&gt;
+
+&lt;p&gt;The source code is licensed under GNU General Public License v3 (&lt;a href='https://github.com/xenon92/efs-backup/blob/master/LICENSE' &gt;GPL v3&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id="copyright"&gt;Copyright&lt;/h3&gt;
+
+&lt;p&gt;&amp;copy; 2014 Shubhang Rathore&lt;/p&gt;</description><link>http://blog.shubhangrathore.com/efs-backup/</link><guid isPermaLink="false">6de267e8-6eaa-4017-a80d-98368f9d3ed6</guid><dc:creator>Shubhang Rathore</dc:creator><pubDate>Sun, 06 Jul 2014 17:32:06 GMT</pubDate></item></channel></rss>

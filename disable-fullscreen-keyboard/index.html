@@ -1,48 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    
     <title>Disable Fullscreen Keyboard</title>
     <meta name="description" content="">
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="../assets/css/style.css?v=9fd4e0a847">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/images/apple-touch-icon-57x57-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png?v=9fd4e0a847">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico?v=9fd4e0a847">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico?v=9fd4e0a847">
+
+    <link rel="canonical" href="http://blog.shubhangrathore.com/disable-fullscreen-keyboard/">
+    <meta name="referrer" content="origin">
     
-    <link rel="stylesheet" href="../assets/css/style.css?v=427c9c68aa">
-
+    <meta property="og:site_name" content="Shubhang Rathore">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Disable Fullscreen Keyboard">
+    <meta property="og:description" content="An open source Xposed module for android, to disable fullscreen keyboard along with the text input field that takes up the whole screen in landscape orientation. It works with all android keyboards, including SwiftKey, Swype, Google keyboard, AOSP keyboard etc....">
+    <meta property="og:url" content="http://blog.shubhangrathore.com/disable-fullscreen-keyboard/">
+    <meta property="article:published_time" content="2014-07-30T12:40:01.349Z">
+    <meta property="article:modified_time" content="2014-07-30T15:34:16.527Z">
     
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/images/apple-touch-icon-57x57-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png?v=427c9c68aa" />
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico?v=427c9c68aa" />
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico?v=427c9c68aa" />
-
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Disable Fullscreen Keyboard">
+    <meta name="twitter:description" content="An open source Xposed module for android, to disable fullscreen keyboard along with the text input field that takes up the whole screen in landscape orientation. It works with all android keyboards, including SwiftKey, Swype, Google keyboard, AOSP keyboard etc....">
+    <meta name="twitter:url" content="http://blog.shubhangrathore.com/disable-fullscreen-keyboard/">
     
-    <meta name="generator" content="Ghost 0.5" />
-<link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="../rss/index.html">
-<link rel="canonical" href="http://blog.shubhangrathore.com/disable-fullscreen-keyboard/" />
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Shubhang Rathore",
+    "author": {
+        "@type": "Person",
+        "name": "Shubhang Rathore",
+        "image": "http://blog.shubhangrathore.com/content/images/2014/Jul/X-new---padded.png",
+        "url": "http://blog.shubhangrathore.com/author/shubhang-rathore",
+        "sameAs": "http://shubhangrathore.com",
+        "description": "My ideas, my code, my design."
+    },
+    "headline": "Disable Fullscreen Keyboard",
+    "url": "http://blog.shubhangrathore.com/disable-fullscreen-keyboard/",
+    "datePublished": "2014-07-30T12:40:01.349Z",
+    "dateModified": "2014-07-30T15:34:16.527Z",
+    "description": "An open source Xposed module for android, to disable fullscreen keyboard along with the text input field that takes up the whole screen in landscape orientation. It works with all android keyboards, including SwiftKey, Swype, Google keyboard, AOSP keyboard etc...."
+}
+    </script>
 
-    <!-- Paste your universal analytics tracking code here -->
-<!-- Replace UA-XXXXXXXX-X with your property tracking info -->
-<!-- Replace example.com with your blog domain -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53889342-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="http://blog.shubhangrathore.com/rss/">
 
 </head>
 <body class="post-template">
@@ -52,28 +68,22 @@
     <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>
     <nav class="main-nav">
         <button class="nav-control"><i class="icon-hamburguer"></i></button>
-        <a href="../index.html" title="Go to Home">Home</a>
+        <a href="../" title="Go to Home">Home</a>
 <a href="http://shubhangrathore.com" target="_blank">Website</a>
 <a href="https://github.com/xenon92" target="_blank">Github</a>
 
 <!--
 <a href="/about" title="Go to About">About</a>
--->
-    </nav>
-    <div class="logo"><a href="../index.html" title="Back to home">Shubhang Rathore</a></div>                
+-->    </nav>
+    <div class="logo"><a href="../" title="Back to home">Shubhang Rathore</a></div>                
 
     <!-- Author info -->
-    
-        
             <div class="author">
     <figure class="author-avatar"><img class="avatar-image" src="../content/images/2014/Jul/X-new---padded.png" alt=""></figure>
     <header class="author-name">Shubhang Rathore</header>
-    <p class="author-bio">My personal blog where I write about anything that is to be showcased and shared.</p>
+    <p class="author-bio">My ideas, my code, my design.</p>
     
 </div>
-        
-    
-
     <!-- Social media badges -->
     <menu class="social-media-share">
 
@@ -98,16 +108,13 @@
     <a href="#" class="icon-feed" rel="external" title="My RSS Feed"></a>
 -->
 </menu>
-
     
     <footer id="main-footer">
-    <p>&copy; 2014 Shubhang Rathore.</p></footer>
+    <p>© 2014 - 2015 Shubhang Rathore</p></footer>
 </section>
     </aside>
     <section id="main" class="pure-u-1-2">
-        
-
-    <article class="post">
+            <article class="post">
         
         <header class="post-header">
             <h1>Disable Fullscreen Keyboard</h1>
@@ -117,8 +124,7 @@
     <div class="post-meta-data"><i class="icon-datetime"></i> 30th July, 2014</div>
     <!--<div class="post-meta-data"><i class="icon-shortlink"></i> <a href="#">BIT.LY/1ES1TCF</a></div>-->
     
-</menu>
-        </header>
+</menu>        </header>
 
         <div class="post-content">
             <p>An open source Xposed module for android, to disable fullscreen keyboard along with the text input field that takes up the whole screen in landscape orientation.</p>
@@ -131,15 +137,15 @@
 
 <h4 id="swiftkey">SwiftKey</h4>
 
-<p><img src="../content/images/2014/Jul/Swiftkey.png" alt="" /></p>
+<p><img src="../content/images/2014/Jul/Swiftkey.png" alt=""></p>
 
 <h4 id="swype">Swype</h4>
 
-<p><img src="../content/images/2014/Jul/Swype.png" alt="" /></p>
+<p><img src="../content/images/2014/Jul/Swype.png" alt=""></p>
 
 <h4 id="aospkeyboard">AOSP Keyboard</h4>
 
-<p><img src="../content/images/2014/Jul/AOSP.png" alt="" /></p>
+<p><img src="../content/images/2014/Jul/AOSP.png" alt=""></p>
 
 <h3 id="howtouse">How to use?</h3>
 
@@ -162,7 +168,7 @@
 
 <h3 id="downloads">Downloads</h3>
 
-<p>Check the '<strong><a href="https://github.com/xenon92/xposed-disable-fullscreen-keyboard/releases">Releases</a></strong>' section in my Github source. <br />
+<p>Check the '<strong><a href="https://github.com/xenon92/xposed-disable-fullscreen-keyboard/releases">Releases</a></strong>' section in my Github source. <br>
 Check the '<strong><a href="http://repo.xposed.info/module/com.shubhangrathore.xposed.disablefullscreenkeyboard">Xposed module repository</a></strong>'</p>
 
 <h3 id="sourcecode">Source code</h3>
@@ -183,7 +189,7 @@ Check the '<strong><a href="http://repo.xposed.info/module/com.shubhangrathore.x
 
 <h3 id="copyright">Copyright</h3>
 
-<p>&copy; 2014 Shubhang Rathore</p>
+<p>© 2014 Shubhang Rathore</p>
         </div>
 
     </article>
@@ -194,19 +200,15 @@ Check the '<strong><a href="http://repo.xposed.info/module/com.shubhangrathore.x
     </section>
     
 
-
     </section>
 </div>
 
-
-<script src="../public/jquery.js?v=427c9c68aa"></script>
+<!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:2368/disable-fullscreen-keyboard/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="../assets/js/plugins/jquery.fitvids.js?v=427c9c68aa"></script>
-<script src="../assets/js/script.js?v=427c9c68aa"></script>
-
+<script src="../assets/js/plugins/jquery.fitvids.js?v=9fd4e0a847"></script>
+<script src="../assets/js/script.js?v=9fd4e0a847"></script>
     <script async type="text/javascript" src="http://apis.google.com/js/plusone.js?callback=gpcb"></script>
-
 </body>
-</html>

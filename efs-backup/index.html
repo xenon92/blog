@@ -1,48 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
-    
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    
     <title>EFS Backup</title>
     <meta name="description" content="">
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="../assets/css/style.css?v=9fd4e0a847">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/images/apple-touch-icon-57x57-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png?v=9fd4e0a847">
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png?v=9fd4e0a847">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico?v=9fd4e0a847">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico?v=9fd4e0a847">
+
+    <link rel="canonical" href="http://blog.shubhangrathore.com/efs-backup/">
+    <meta name="referrer" content="origin">
     
-    <link rel="stylesheet" href="../assets/css/style.css?v=427c9c68aa">
-
+    <meta property="og:site_name" content="Shubhang Rathore">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="EFS Backup">
+    <meta property="og:description" content="An open source android app to backup and restore the EFS partition of any device. EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like Wi-Fi...">
+    <meta property="og:url" content="http://blog.shubhangrathore.com/efs-backup/">
+    <meta property="article:published_time" content="2014-07-06T17:32:06.981Z">
+    <meta property="article:modified_time" content="2014-07-13T12:33:01.653Z">
     
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144x144-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114x114-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72x72-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/images/apple-touch-icon-57x57-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-precomposed.png?v=427c9c68aa" />
-    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png?v=427c9c68aa" />
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico?v=427c9c68aa" />
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico?v=427c9c68aa" />
-
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="EFS Backup">
+    <meta name="twitter:description" content="An open source android app to backup and restore the EFS partition of any device. EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like Wi-Fi...">
+    <meta name="twitter:url" content="http://blog.shubhangrathore.com/efs-backup/">
     
-    <meta name="generator" content="Ghost 0.5" />
-<link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="../rss/index.html">
-<link rel="canonical" href="http://blog.shubhangrathore.com/efs-backup/" />
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Shubhang Rathore",
+    "author": {
+        "@type": "Person",
+        "name": "Shubhang Rathore",
+        "image": "http://blog.shubhangrathore.com/content/images/2014/Jul/X-new---padded.png",
+        "url": "http://blog.shubhangrathore.com/author/shubhang-rathore",
+        "sameAs": "http://shubhangrathore.com",
+        "description": "My ideas, my code, my design."
+    },
+    "headline": "EFS Backup",
+    "url": "http://blog.shubhangrathore.com/efs-backup/",
+    "datePublished": "2014-07-06T17:32:06.981Z",
+    "dateModified": "2014-07-13T12:33:01.653Z",
+    "description": "An open source android app to backup and restore the EFS partition of any device. EFS is a system partition in the root directory of the phone that contains very important and basic information about the device&#x27;s identity like Wi-Fi..."
+}
+    </script>
 
-    <!-- Paste your universal analytics tracking code here -->
-<!-- Replace UA-XXXXXXXX-X with your property tracking info -->
-<!-- Replace example.com with your blog domain -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53889342-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Shubhang Rathore" href="http://blog.shubhangrathore.com/rss/">
 
 </head>
 <body class="post-template">
@@ -52,28 +68,22 @@
     <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>
     <nav class="main-nav">
         <button class="nav-control"><i class="icon-hamburguer"></i></button>
-        <a href="../index.html" title="Go to Home">Home</a>
+        <a href="../" title="Go to Home">Home</a>
 <a href="http://shubhangrathore.com" target="_blank">Website</a>
 <a href="https://github.com/xenon92" target="_blank">Github</a>
 
 <!--
 <a href="/about" title="Go to About">About</a>
--->
-    </nav>
-    <div class="logo"><a href="../index.html" title="Back to home">Shubhang Rathore</a></div>                
+-->    </nav>
+    <div class="logo"><a href="../" title="Back to home">Shubhang Rathore</a></div>                
 
     <!-- Author info -->
-    
-        
             <div class="author">
     <figure class="author-avatar"><img class="avatar-image" src="../content/images/2014/Jul/X-new---padded.png" alt=""></figure>
     <header class="author-name">Shubhang Rathore</header>
-    <p class="author-bio">My personal blog where I write about anything that is to be showcased and shared.</p>
+    <p class="author-bio">My ideas, my code, my design.</p>
     
 </div>
-        
-    
-
     <!-- Social media badges -->
     <menu class="social-media-share">
 
@@ -98,16 +108,13 @@
     <a href="#" class="icon-feed" rel="external" title="My RSS Feed"></a>
 -->
 </menu>
-
     
     <footer id="main-footer">
-    <p>&copy; 2014 Shubhang Rathore.</p></footer>
+    <p>© 2014 - 2015 Shubhang Rathore</p></footer>
 </section>
     </aside>
     <section id="main" class="pure-u-1-2">
-        
-
-    <article class="post">
+            <article class="post">
         
         <header class="post-header">
             <h1>EFS Backup</h1>
@@ -117,15 +124,14 @@
     <div class="post-meta-data"><i class="icon-datetime"></i> 6th July, 2014</div>
     <!--<div class="post-meta-data"><i class="icon-shortlink"></i> <a href="#">BIT.LY/1ES1TCF</a></div>-->
     
-</menu>
-        </header>
+</menu>        </header>
 
         <div class="post-content">
             <p>An open source android app to backup and restore the EFS partition of any device.</p>
 
 <p>EFS is a system partition in the root directory of the phone that contains very important and basic information about the device's identity like <strong>Wi-Fi MAC address</strong>, <strong>Bluetooth MAC address</strong> and the MOST IMPORTANT - <strong>IMEI address</strong> (nv_data.bin).</p>
 
-<p>Now if this EFS partition accidentally gets corrupted or erased, the phone’s IMEI number will get erased and the device will become completely useless. It won't be able to make voice call further, as the carrier network will not recognize the phone. This can happen for a variety of reasons, including flashing a wrong or corrupted ROM. This kind of damage is not accepted by the service center. Only solution that the service center provides is to replace the motherboard of the device and that costs a lot of <strong>$$$</strong>!</p>
+<p>Now if this EFS partition accidentally gets corrupted or erased, the phoneâs IMEI number will get erased and the device will become completely useless. It won't be able to make voice call further, as the carrier network will not recognize the phone. This can happen for a variety of reasons, including flashing a wrong or corrupted ROM. This kind of damage is not accepted by the service center. Only solution that the service center provides is to replace the motherboard of the device and that costs a lot of <strong>$$$</strong>!</p>
 
 <p>Only a <strong>backup</strong> of the EFS partition can save the phone if something goes wrong with the EFS partition.</p>
 
@@ -178,7 +184,7 @@
 
 <h3 id="copyright">Copyright</h3>
 
-<p>&copy; 2014 Shubhang Rathore</p>
+<p>© 2014 Shubhang Rathore</p>
         </div>
 
     </article>
@@ -189,19 +195,15 @@
     </section>
     
 
-
     </section>
 </div>
 
-
-<script src="../public/jquery.js?v=427c9c68aa"></script>
+<!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="http://localhost:2368/efs-backup/assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="../assets/js/plugins/jquery.fitvids.js?v=427c9c68aa"></script>
-<script src="../assets/js/script.js?v=427c9c68aa"></script>
-
+<script src="../assets/js/plugins/jquery.fitvids.js?v=9fd4e0a847"></script>
+<script src="../assets/js/script.js?v=9fd4e0a847"></script>
     <script async type="text/javascript" src="http://apis.google.com/js/plusone.js?callback=gpcb"></script>
-
 </body>
-</html>
